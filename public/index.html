@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      border: 2px solid #007bff;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #weather {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    #weather h2 {
+      margin: 0 0 10px;
+      color: #333;
+    }
+    #weather p {
+      margin: 5px 0;
+      color: #555;
+    }
+    #error {
+      color: red;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather Dashboard</h1>
+  <form id="search-form">
+    <input type="text" id="city" placeholder="Enter city name" required />
+    <button type="submit">Search</button>
+  </form>
+  <div id="weather">
+    <!-- Weather information will be displayed here -->
+  </div>
+  <div id="error">
+    <!-- Error messages will be displayed here -->
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
